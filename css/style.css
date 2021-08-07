@@ -1,0 +1,244 @@
+/* -------------------------
+            google font
+---------------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+/* -------------------------
+            top-banner
+---------------------------*/
+.top-banner {
+  display: flex;
+  background-color: #2d25a0;
+  padding: 50px;
+}
+.flexible {
+  width: 50%;
+}
+.man-football-img img {
+  width: 100%;
+}
+.text-info h1 {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.text-info a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e02c6d;
+  padding: 10px 20px;
+  font-size: 16px;
+  animation-name: sample;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+/*-------------animation------------- */
+@keyframes sample {
+  from {
+    border-radius: 0%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+/* ----------------animation------------ */
+/* -------------------------
+            players
+---------------------------*/
+.players {
+  padding: 70px 150px 0 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 70px;
+}
+.player {
+  box-shadow: 5px 5px 10px 5px #c6c6c8;
+  padding: 5px;
+}
+.player-pic img {
+  width: 100%;
+}
+.player-info h3 {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+.player-info p {
+  color: #6c6c6c;
+  font-size: 16px;
+}
+/* -------------------------
+            about
+---------------------------*/
+.about {
+  background-image: url(../images/bg-about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  margin: 0 150px 0 150px;
+}
+.about h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.about p {
+  font-size: 16px;
+  color: #ffffff;
+}
+.about a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e02c6d;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+/* -------------------------
+            Latest news
+---------------------------*/
+.latest-news {
+  padding: 0 150px 0 150px;
+  margin-bottom: 70px;
+}
+.latest-news h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #18191f;
+  border-bottom: 5px solid #18191f;
+}
+.news-all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+.news {
+  display: flex;
+}
+.news-img img {
+  width: 100%;
+}
+.news-info h5 {
+  color: #18191f;
+  font-size: 16px;
+  margin: 0;
+}
+.news-info p {
+  font-size: 12px;
+  color: #6c6c6c;
+}
+/* -------------------------
+            Footer
+---------------------------*/
+footer {
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #969bab;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #e7e7e8;
+  padding: 12px;
+}
+footer p {
+  color: black;
+  font-size: 18px;
+  margin-left: 50px;
+}
+/* -------------------------
+            media queries
+---------------------------*/
+/* ----Mobile device----- */
+@media screen and (max-width: 688px) {
+  .top-banner {
+    padding: 0;
+    flex-direction: column;
+  }
+  .man-football-img {
+    margin-top: 30px;
+    align-self: center;
+  }
+  .man-football-img img {
+    width: 100%;
+  }
+  .text-info h1 {
+    font-size: 21px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .text-info a {
+    padding: 10px 10px;
+    font-size: 10px;
+  }
+  .players {
+    padding: 0 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  .about {
+    padding: 20px;
+    margin: 0px;
+  }
+  .latest-news {
+    padding: 0;
+    margin-bottom: 70px;
+  }
+  .news-all {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer img {
+    width: 50%;
+  }
+}
+/* tablet device */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .top-banner {
+    padding: 0;
+    flex-direction: column;
+  }
+  .man-football-img {
+    margin-top: 50px;
+    align-self: center;
+  }
+  .text-info h1 {
+    font-size: 51px;
+  }
+  .players {
+    padding: 70px 50px 0 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about {
+    padding: 50px;
+    margin: 0;
+  }
+  .latest-news {
+    padding: 0;
+    margin-bottom: 70px;
+  }
+  .news-all {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+  }
+  footer img {
+    width: 70%;
+  }
+}
